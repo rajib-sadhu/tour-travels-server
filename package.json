@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node ./dist/server.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "tsc",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix",
@@ -24,11 +26,13 @@
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.23.0",
     "@types/cors": "^2.8.17",
+    "@types/eslint": "^9.6.1",
     "@types/eslint__js": "^9.14.0",
     "@types/express": "^5.0.1",
     "@types/node": "^22.13.14",
     "eslint": "^9.23.0",
     "globals": "^16.0.0",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.28.0"
   }
